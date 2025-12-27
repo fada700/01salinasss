@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Salinass - Full Stack Developer especializado en Discord Bots y Desarrollo Web">
+    <title>Salinass - Full Stack Developer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">Salinass</div>
+            <button class="nav-toggle" id="navToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#services" class="nav-link">Services</a></li>
+                <li><a href="#payment" class="nav-link">Payment</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polyline points="16 18 22 12 16 6"></polyline>
+                        <polyline points="8 6 2 12 8 18"></polyline>
+                    </svg>
+                </div>
+                <h1 class="hero-title">Salinass</h1>
+                <div class="hero-subtitle">
+                    🛠️ FULL STACK DEVELOPER | DISCORD & WEB SPECIALIST
+                </div>
+                <p class="hero-description">
+                    ¡Hola! Soy estudiante de Ingeniería en Sistemas y desarrollador Full Stack especializado en el ecosistema Node.js.
+                    <span class="highlight">Transformo tus ideas en sistemas funcionales usando Visual Studio Code.</span>
+                </p>
+                <div class="hero-buttons">
+                    <a href="#services" class="btn btn-primary">Ver Servicios 🚀</a>
+                    <a href="#contact" class="btn btn-secondary">Contactar</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="services" class="services">
+        <div class="container">
+            <h2 class="section-title">🚀 MIS SERVICIOS (TOP 3)</h2>
+            
+            <div class="services-grid">
+                
+                <div class="service-card">
+                    <div class="service-icon discord">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515a.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0a12.64 12.64 0 0 0-.617-1.25a.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 0 0 .031.057a19.9 19.9 0 0 0 5.993 3.03a.078.078 0 0 0 .084-.028a14.09 14.09 0 0 0 1.226-1.994a.076.076 0 0 0-.041-.106a13.107 13.107 0 0 1-1.872-.892a.077.077 0 0 1-.008-.128a10.2 10.2 0 0 0 .372-.292a.074.074 0 0 1 .077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127a12.299 12.299 0 0 1-1.873.892a.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028a19.839 19.839 0 0 0 6.002-3.03a.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.03z"/>
+                        </svg>
+                    </div>
+                    <h3>Discord Bots Avanzados</h3>
+                    <p>Sistemas personalizados desde cero (index.js). Integración total con APIs externas y bases de datos. Automatización de moderación, economía, y más.</p>
+                    <button class="btn-expand" onclick="toggleService(0)">
+                        <span class="expand-text">Ver más detalles</span>
+                        <svg class="expand-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="6 9 12 15 18 9"></polyline>
+                        </svg>
+                    </button>
+                    <div class="service-details" id="service-0">
+                        <h4>✨ Características:</h4>
+                        <ul>
+                            <li>Sistemas de moderación automática con warns, kicks, bans temporales y permanentes</li>
+                            <li>Economía completa con tienda, inventario, trabajo, robos y minijuegos</li>
+                            <li>Sistema de tickets avanzado con transcripts y categorización</li>
+                            <li>Integración con APIs (Spotify, YouTube, Weather, etc.)</li>
+                            <li>Sistema de niveles y recompensas personalizables</li>
+                            <li>Comandos slash (/) con autocompletado</li>
+                            <li>Panel web de administración (opcional)</li>
+                            <li>Base de datos MongoDB o MySQL</li>
+                        </ul>
+                        <h4>💻 Lenguajes & Tecnologías:</h4>
+                        <div class="tech-tags">
+                            <span>JavaScript</span>
+                            <span>TypeScript</span>
+                            <span>Node.js</span>
+                            <span>Discord.js</span>
+                            <span>Python</span>
+                            <span>Discord.py</span>
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div class="service-card">
+                    <div class="service-icon web">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <line x1="2" y1="12" x2="22" y2="12"></line>
+                            <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+                        </svg>
+                    </div>
+                    <h3>Desarrollo Web Full Stack</h3>
+                    <p>Creación de páginas web dinámicas y funcionales. Backend robusto con Node.js y Frontend moderno.</p>
+                    <button class="btn-expand" onclick="toggleService(1)">
+                        <span class="expand-text">Ver más detalles</span>
+                        <svg class="expand-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="6 9 12 15 18 9"></polyline>
+                        </svg>
+                    </button>
+                    <div class="service-details" id="service-1">
+                        <h4>✨ Características:</h4>
+                        <ul>
+                            <li>Diseño responsive y moderno (mobile-first)</li>
+                            <li>Páginas web interactivas con animaciones fluidas</li>
+                            <li>Sistemas de autenticación (login, registro, sesiones)</li>
+                            <li>Panel de administración personalizado</li>
+                            <li>API REST para conectar con aplicaciones móviles</li>
+                            <li>Integración con bases de datos (MongoDB, MySQL, PostgreSQL)</li>
+                            <li>Optimización SEO y velocidad de carga</li>
+                            <li>Dashboards con gráficos y estadísticas en tiempo real</li>
+                        </ul>
+                        <h4>💻 Lenguajes & Tecnologías:</h4>
+                        <div class="tech-tags">
+                            <span>HTML5</span>
+                            <span>CSS3</span>
+                            <span>JavaScript</span>
+                            <span>TypeScript</span>
+                            <span>React</span>
+                            <span>Next.js</span>
+                            <span>Node.js</span>
+                            <span>Express</span>
+                            <span>Tailwind CSS</span>
+                            <span>Python</span>
+                            <span>Flask</span>
+                            <span>Django</span>
+                        </div>
+                    </div>
+                </div>
+
+        
+                <div class="service-card">
+                    <div class="service-icon infra">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect>
+                            <rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect>
+                            <line x1="6" y1="6" x2="6.01" y2="6"></line>
+                            <line x1="6" y1="18" x2="6.01" y2="18"></line>
+                        </svg>
+                    </div>
+                    <h3>Infraestructura & Soporte</h3>
+                    <p>¡GRATIS! Incluyo configuración de Host y Data sin costo adicional. Mantenimiento y optimización de rendimiento.</p>
+                    <button class="btn-expand" onclick="toggleService(2)">
+                        <span class="expand-text">Ver más detalles</span>
+                        <svg class="expand-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="6 9 12 15 18 9"></polyline>
+                        </svg>
+                    </button>
+                    <div class="service-details" id="service-2">
+                        <h4>✨ Características:</h4>
+                        <ul>
+                            <li>Configuración completa de hosting (VPS, Cloud, Shared)</li>
+                            <li>Setup de base de datos con backups automáticos</li>
+                            <li>Configuración de dominios y SSL (HTTPS)</li>
+                            <li>Monitoreo 24/7 con alertas automáticas</li>
+                            <li>Optimización de rendimiento y velocidad</li>
+                            <li>Soporte técnico continuo vía Discord</li>
+                            <li>Actualizaciones de seguridad</li>
+                            <li>Documentación completa del proyecto</li>
+                        </ul>
+                        <h4>💻 Lenguajes & Tecnologías:</h4>
+                        <div class="tech-tags">
+                            <span>Linux</span>
+                            <span>Bash</span>
+                            <span>Git</span>
+                            <span>Docker</span>
+                            <span>Nginx</span>
+                            <span>PM2</span>
+                            <span>cPanel</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="note-box">
+                <p>
+                    <strong class="note-label">[NOTA]</strong> Mi enfoque es darte un sistema "llave en mano":
+                    <span class="note-highlight">tú pides la idea, yo te entrego el bot/sitio corriendo con hosting incluido.</span>
+                </p>
+            </div>
+        </div>
+    </section>
+
+    
+    <section id="payment" class="payment">
+        <div class="container">
+            <h2 class="section-title">💸 MÉTODOS DE PAGO</h2>
+            <div class="payment-grid">
+                <div class="payment-card real">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="12" y1="1" x2="12" y2="23"></line>
+                        <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
+                    </svg>
+                    <h3>Dinero Real</h3>
+                    <p>Paypal / Transferencia</p>
+                </div>
+                <div class="payment-card robux">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+                    </svg>
+                    <h3>Robux</h3>
+                    <p>Precios negociables</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">📬 Contáctame</h2>
+            <div class="contact-card">
+                <svg class="discord-logo" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515a.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0a12.64 12.64 0 0 0-.617-1.25a.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 0 0 .031.057a19.9 19.9 0 0 0 5.993 3.03a.078.078 0 0 0 .084-.028a14.09 14.09 0 0 0 1.226-1.994a.076.076 0 0 0-.041-.106a13.107 13.107 0 0 1-1.872-.892a.077.077 0 0 1-.008-.128a10.2 10.2 0 0 0 .372-.292a.074.074 0 0 1 .077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127a12.299 12.299 0 0 1-1.873.892a.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028a19.839 19.839 0 0 0 6.002-3.03a.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.03z"/>
+                </svg>
+                <h3>Discord</h3>
+                <p>Contáctame directamente en Discord para proyectos y consultas</p>
+                <a href="https://discord.com/users/1129157255137349752" target="_blank" class="btn btn-discord">Agrégame en Discord</a>
+            </div>
+        </div>
+    </section>
+
+    
+    <footer class="footer">
+        <div class="container">
+            <p>© 2025 Salinass - Full Stack Developer  ~ Visual Studio Code</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
